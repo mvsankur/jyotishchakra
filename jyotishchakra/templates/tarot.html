@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- hs About Title Start -->
+<div class="hs_indx_title_main_wrapper">
+        <div class="hs_title_img_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 full_width">
+                    <div class="hs_indx_title_left_wrapper">
+                        <h2>Tarot Card</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 full_width">
+                    <div class="hs_indx_title_right_wrapper">
+                        <ul>
+                            <li><a href="{{ url_for('home') }}">Home</a> &nbsp;&nbsp;&nbsp;> </li>
+                            <li>Tarot </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hs About Title End -->
+    <!-- hs sidebar Start -->
+    <div class="hs_kd_sidebar_main_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                    <div class="hs_kd_left_sidebar_main_wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="hs_kd_first_sec_wrapper">
+                                    <h2>Tarot Card</h2>
+                                    <h4><span></span></h4>
+                                    <p>Every card and its combination with other cards give the person the prediction of his/her future in that particular aspect of life. As every card has some meaning, it helps in getting the exact situation which the person has to face within money or in love or any other aspect. This is one of the most effective and used methods of astrology in western countries and now developing it's rooted in Asian countries with more and more people believing it.</p>
+                                    <p>Tarot is also convenient for those people who are unknown to their birth details as it does not require any significant information about individuals making a query. It only requires Name of the asker and question. This study is a considerable option of Prashana Kundali.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="hs_kd_first_sec_wrapper">
+                                    <h2>How does it work?</h2>
+                                    <p>Tarot deck has 78 cards i.e. divided into Major Arcana and Minor Arcana. The word ‘Arcana’ means secret. In the context of Tarot, it means a secret or a mystery.The Major Arcana or trump suit consists of 22 cards which represent the state of being mental
+                                    emotional and spiritual condition whereas Minor arcana has remaining 56 cards. These are divided into four suits. Swords, cups, coins and wands.There are fourteen cards in each suit Ace to Ten & four face cards i.e. Page, Knight, Queen and king. Minor Arcana describes situations and different aspect of life.
+                                    <ul>
+                                        <li>Suit represents</li>
+                                        <li>Sword - Mental / Intellectual</li>
+                                        <li>Cups - Emotional</li>
+                                        <li>Coin - Physical & Material</li>
+                                        <li>Wands - Career, ability and potentials</li>
+                                    </ul>
+                                    <p>When reading happens, cards are being shuffled. This method transfers my energy to the deck.
+                                    The person receiving the reading additionally ought to be concentrating on the question or area for which they require guidance whereas shuffling of the deck is occurring. In ancient circles, an additional elaborate sorting and separation of the cards are performed.
+                                    Once the cards are shuffled and therefore the deck has been cut, then the layout of the cards in an exceeding pattern is called spread. Every position within the spread features a meaning, and there are many various sorts of spreads. Spread used is up to the precise form of question or reading. Some spreads focus more on a particular sort of information. For instance, one unfold would possibly concentrate more on emotional matters, whereas another may bring in more information concerning the influences of others.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="hs_kd_right_sidebar_main_wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="hs_kd_right_first_sec_wrapper">
+                                    <div class="hs_kd_right_first_sec_heading">
+                                        <h2>kundali patrikla</h2>
+                                    </div>
+                                    <div class="hs_kd_right_first_sec_img_heading">
+                                        <img src="{{url_for('static',filename='images/content/kundali/patrika.jpg') }}" alt="patrika" />
+                                    </div>
+                                    <div class="hs_kd_right_first_sec_img_price_heading">
+                                        <ul>
+                                            <li>Kundli Patrika</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="hs_kd_right_first_sec_wrapper2">
+                                    <div class="hs_kd_right_first_sec_heading">
+                                        <h2>Mangala Dosha</h2>
+                                    </div>
+                                    <div class="hs_kd_right_first_sec_img_heading">
+                                        <img src="{{ url_for('static',filename='images/content/kundali/patrika2.jpg') }}" alt="patrika" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hs sidebar End -->
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- hs About Title Start -->
+<div class="hs_indx_title_main_wrapper">
+    <div class="hs_title_img_overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 full_width">
+                <div class="hs_indx_title_left_wrapper">
+                    <h2>About Us</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 full_width">
+                <div class="hs_indx_title_right_wrapper">
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">Home</a> &nbsp;&nbsp;&nbsp;> </li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- hs About Title End -->
+<!-- hs about ind wrapper Start -->
+<div class="hs_about_indx_main_wrapper hs_about_indx_inner_main_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="hs_about_left_img_wrapper">
+                    <img src="{{ url_for('static',filename='images/content/about/kritika.jpeg') }}" alt="about_img" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="hs_about_right_cont_wrapper">
+                    <!-- <h2>Who We Are</h2> -->
+                    <p>JyotishChakra is an online platform where people can know their problem's root and heal them with the platforms significant services. JyotishChakra got started in the year 2011 but on the request of many happy and satisfied clients, we recently began its online services to help individuals lead a happy life full of love and commitment.</p>
+                    <h2 class="space20">Meet your Astrologer</h2>
+                    <p>Stars and planets are beyond simple celestial bodies. They control millions of lives. My curiosity to know more about life developed my interest towards fortunes. My deepened interest and skill to study past, present and future made me learn every branch of it. I have studied astrology,palmistry, tarot reading, Vastu from the school of occult sciences and have also done Theta at Jyotish Gurukul, Reiki from the Mirage and advanced astrology from TK Kunchi Krishnan by Guru-Shishya parampara.</p>
+
+                    <p class="space20"> With rich experience of 7 years, I have dealt with hundreds of horoscopes each distinct on itself.Through Jyotish Chakra, I wish to give each problem healing astrological tactics that heals your pain and brings happiness back in your life.</p>
+                    
+                    <p>JyotishChakra is to extend the boundaries of Astro healing and serve people with personalized remedies on issues like career, relationship, business, finance, education, health</p>
+
+                    <h3>Contact Us</h3>
+                    <h1>+91-99904 65672</h1>
+                    <!-- <div class="hs_effect_btn hs_about_btn">
+                        <ul>
+                            <li><a href="#" class="hs_btn_hover">Read more</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- hs about ind wrapper End -->
+{% endblock %}
