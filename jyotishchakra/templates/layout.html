@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 
+<html lang="en" class="ie8 no-js">
+   <![endif]-->
+   <!--[if IE 9]> 
+   <html lang="en" class="ie9 no-js">
+      <![endif]-->
+      <!--[if !IE]><!-->
+      <html lang="en">
+         <!--[endif]-->
+         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+         <head>
+            <meta charset="utf-8" />
+            <title>Jyotish Chakra-An online Platform for all jyotish related services</title>
+            <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+            <meta name="description" content="Horoscope" />
+            <meta name="keywords" content="Horoscope" />
+            <meta name="author" content="" />
+            <meta name="MobileOptimized" content="320" />
+            <!--srart theme style -->
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fonts.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flaticon.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/magnific-popup.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style2.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" />
+            <!-- favicon links -->
+            <link rel="shortcut icon" type="image/png" href="{{ url_for('static',filename='images/header/favicon.ico') }}" />
+         </head>
+         <body>
+            <!-- preloader Start -->
+            <div id="preloader">
+               <div id="status"><img src="{{ url_for('static',filename='images/header/horoscope.gif') }}" id="preloader_image" alt="loader">
+               </div>
+            </div>
+            <!-- hs top header Start -->
+            <div class="hs_top_header_wrapper hidden-xs">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
+                        <div class="hs_left_side_warpper">
+                           <div class="hs_top_contect">
+                              <p><i class="fa fa-phone"></i> &nbsp;+91-99904 65672</p>
+                              <p class=""><i class="fa fa-envelope"></i> &nbsp;<a href="mailto:info@jyotishchakra.com">info@jyotishchakra.com</a></p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-7 col-md-7 col-sm-5 col-xs-12">
+                        <div class="hs_right_side_main_warpper">
+                           <div class="hs_right_side_warpper">
+                              <ul>
+                                 <li>
+                                    <div class="hs_top_socialicon">
+                                       <ul>
+                                          <li class="hidden-sm">Connect with Horoscope :</li>
+                                          <li><a href="https://www.facebook.com/Jyotish-Chakra-231834377700713"><i class="fa fa-facebook"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="hs_top_donet_btn">
+                                       <ul>
+                                          <li><a href="{{ url_for('contactus') }}">Appointments</a></li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- hs top header End -->
+            <!-- hs Navigation Start -->
+            <div class="hs_navigation_header_wrapper">
+               <div class="container">
+                  <div id="search_open" class="gc_search_box">
+                     <input type="text" placeholder="Search here">
+                     <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hidden-xs">
+                        <div class="hs_logo_wrapper">
+                           <a href="{{ url_for('home') }}"><img src="{{ url_for('static',filename='images/header/logo.png') }}" alt="logo"></a>
+                        </div>
+                     </div>
+                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <nav class="hs_main_menu hidden-xs">
+                           <ul>
+                              <li>
+                                 <a class="menu-button2" href="{{ url_for('home') }}">Home</a>
+                              </li>
+                              <li>
+                                 <a class="menu-button2" href="{{ url_for('aboutus') }}">About Us</a>
+                              </li>
+                              <li>
+                                 <div class="dropdown-wrapper menu-button">
+                                    <a class="menu-button" href="#">Services</a>
+                                    <div class="drop-menu hs_mega_menu">
+                                       <a class="menu-button" href="{{ url_for('horoscope') }}">Horoscope</a>
+                                       <a class="menu-button" href="{{ url_for('numerology') }}">Numerology</a>
+                                       <a class="menu-button" href="{{ url_for('tarot') }}">Tarot Card</a>
+                                       <a class="menu-button" href="{{ url_for('vastu') }}">Vastu</a>
+                                       <a class="menu-button" href="{{ url_for('theta') }}">Theta</a>
+                                       <a class="menu-button" href="{{ url_for('reiki') }}">Reiki</a>
+                                       <!--  <a class="menu-button" href="<?php bloginfo('url');?>/palm/">Palm</a> -->
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <a class="menu-button2" href="{{ url_for('contactus') }}">Contact </a>
+                              </li>
+                           </ul>
+                        </nav>
+                        <header class="mobail_menu visible-xs">
+                           <div class="container-fluid">
+                              <div class="row">
+                                 <div class="col-xs-6 col-sm-6">
+                                    <div class="hs_logo">
+                                       <a href="{{ url_for('home') }}"><img src="{{ url_for('static',filename='images/header/logo.png') }}" alt="Logo" title="Logo"></a>
+                                    </div>
+                                 </div>
+                                 <div class="col-xs-6 col-sm-6">
+                                    <div class="cd-dropdown-wrapper">
+                                       <a class="house_toggle" href="#0">
+                                          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                             width="511.63px" height="511.631px" viewBox="0 0 511.63 511.631" style="enable-background:new 0 0 511.63 511.631;"
+                                             xml:space="preserve">
+                                             <g>
+                                                <g>
+                                                   <path d="M493.356,274.088H18.274c-4.952,0-9.233,1.811-12.851,5.428C1.809,283.129,0,287.417,0,292.362v36.545
+                                                      c0,4.948,1.809,9.236,5.424,12.847c3.621,3.617,7.904,5.432,12.851,5.432h475.082c4.944,0,9.232-1.814,12.85-5.432
+                                                      c3.614-3.61,5.425-7.898,5.425-12.847v-36.545c0-4.945-1.811-9.233-5.425-12.847C502.588,275.895,498.3,274.088,493.356,274.088z"
+                                                      />
+                                                   <path d="M493.356,383.721H18.274c-4.952,0-9.233,1.81-12.851,5.427C1.809,392.762,0,397.046,0,401.994v36.546
+                                                      c0,4.948,1.809,9.232,5.424,12.854c3.621,3.61,7.904,5.421,12.851,5.421h475.082c4.944,0,9.232-1.811,12.85-5.421
+                                                      c3.614-3.621,5.425-7.905,5.425-12.854v-36.546c0-4.948-1.811-9.232-5.425-12.847C502.588,385.53,498.3,383.721,493.356,383.721z"
+                                                      />
+                                                   <path d="M506.206,60.241c-3.617-3.612-7.905-5.424-12.85-5.424H18.274c-4.952,0-9.233,1.812-12.851,5.424
+                                                      C1.809,63.858,0,68.143,0,73.091v36.547c0,4.948,1.809,9.229,5.424,12.847c3.621,3.616,7.904,5.424,12.851,5.424h475.082
+                                                      c4.944,0,9.232-1.809,12.85-5.424c3.614-3.617,5.425-7.898,5.425-12.847V73.091C511.63,68.143,509.82,63.861,506.206,60.241z"/>
+                                                   <path d="M493.356,164.456H18.274c-4.952,0-9.233,1.807-12.851,5.424C1.809,173.495,0,177.778,0,182.727v36.547
+                                                      c0,4.947,1.809,9.233,5.424,12.845c3.621,3.617,7.904,5.429,12.851,5.429h475.082c4.944,0,9.232-1.812,12.85-5.429
+                                                      c3.614-3.612,5.425-7.898,5.425-12.845v-36.547c0-4.952-1.811-9.231-5.425-12.847C502.588,166.263,498.3,164.456,493.356,164.456z
+                                                      "/>
+                                                </g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                             <g>
+                                             </g>
+                                          </svg>
+                                       </a>
+                                       <nav class="cd-dropdown">
+                                          <h2><a href="{{ url_for('home') }}">Jyotish Chakra</a></h2>
+                                          <a href="#0" class="cd-close">Close</a>
+                                          <ul class="cd-dropdown-content">
+                                             <li>
+                                                <form class="cd-search">
+                                                   <input type="search" placeholder="Search...">
+                                                </form>
+                                             </li>
+                                             <li>
+                                                <a href="{{ url_for('home') }}">Home</a>
+                                             </li>
+                                             <li>
+                                                <a href="{{ url_for('aboutus') }}">About Us</a>
+                                             </li>
+                                             <!-- .has-children -->
+                                             <li class="has-children">
+                                                <a href="#">Services</a>
+                                                <ul class="cd-secondary-dropdown is-hidden">
+                                                   <li class="go-back"><a href="#0">Menu</a></li>
+                                                   <li>
+                                                      <a href="{{ url_for('horoscope') }}">Horoscope</a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="{{ url_for('numerology') }}">Numerology</a>
+                                                   </li>
+                                                   <!-- .has-children -->
+                                                   <!-- .has-children -->
+                                                   <li>
+                                                      <a href="{{ url_for('tarot') }}">Tarot Card</a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="{{ url_for('vastu') }}">Vastu</a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="{{ url_for('theta') }}">Theta</a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="{{ url_for('reiki') }}">Reiki</a>
+                                                   </li>
+                                                   <!-- .has-children -->
+                                                </ul>
+                                                <!-- .cd-secondary-dropdown -->
+                                             </li>
+                                             <li>
+                                                <a href="{{ url_for('contactus') }}">Contact</a>
+                                             </li>
+                                          </ul>
+                                          <!-- .cd-dropdown-content -->
+                                       </nav>
+                                       <!-- .cd-dropdown -->
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- .cd-dropdown-wrapper -->
+                        </header>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- hs Navigation End -->
+            {% block content %}
+            {% endblock %}
+            
+            <!-- hs footer wrapper Start -->
+            <div class="hs_footer_main_wrapper">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="hs_footer_logo_wrapper">
+                           <img src="{{ url_for('static',filename='images/header/logo.png') }}" alt="footer_logo" class="img-responsive" />
+                           <p>JyotishChakra is an online platform where people can know their problem's root and heal them with the platforms significant services. JyotishChakra got started in the year 2011 but on the request of many happy and satisfied clients.</p>
+                           <h4><a href="{{ url_for('contactus') }}">Contact Us</a></h4>
+                           <p>C-161B ,Nanak Pura, Hari Nagar, New Delhi-110064</p>
+                           <ul>
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- hs footer wrapper End -->
+            <!-- hs bottom footer wrapper Start -->
+            <div class="hs_bottom_footer_main_wrapper">
+               <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer_bottom_cont_wrapper">
+                           <p>© Copyright 2019 by JyotishChakra. All right Reserved</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- hs bottom footer wrapper End -->
+            <!--main js file start-->
+            <script src="{{ url_for('static', filename='js/jquery_min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/modernizr.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/jquery.menu-aim.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/parallax.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/jquery.shuffle.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/jquery.countTo.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/jquery.inview.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/jquery.magnific-popup.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+            <!--main js file end-->
+         </body>
+      </html>

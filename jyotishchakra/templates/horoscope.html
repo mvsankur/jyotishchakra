@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- hs About Title Start -->
+<div class="hs_indx_title_main_wrapper">
+    <div class="hs_title_img_overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 full_width">
+                <div class="hs_indx_title_left_wrapper">
+                    <h2>Horoscope</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 full_width">
+                <div class="hs_indx_title_right_wrapper">
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">Home</a> &nbsp;&nbsp;&nbsp;> </li>
+                        <li>Horoscope </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- hs About Title End -->
+<!-- hs sidebar Start -->
+<div class="hs_kd_sidebar_main_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <div class="hs_kd_left_sidebar_main_wrapper">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="hs_kd_first_sec_wrapper">
+                                <h2>Horoscope </h2>
+                                <h4><span></span></h4>
+                                <p>Janampatri is stated to be the graphical sketch of planets as per the time of a person’s birth originated by ancientits. It describes Planets, rising stars, yogas and dasas with their effects. Generally, it is ready
+                                    provided one’s birth etails and a discovers many future issues regarding a particular person and his or her life in advance. Zodiac sign, movem ents and situation of the planets in horoscope describe the status
+                                    of each stage of one‘s life from born to teenage, adult and old age.This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <div class="hs_kd_second_sec_wrapper">
+                                <p>The universe is filled with numerous mysteries which needs to be unravelled. All sorts of mysteries are intertwined with its past, present and future and human beings are fascinated to learn about it. This fascination and curiosity for these mysteries lead an individual to learn about one's past, present and future. In Vedic sciences studying the horoscope of an individual refers to learn the same. It refers to a chart which represents the planetary position with exact time and place of birth of an individual which is also known as 'Kundali'. Horoscope gives an
+                                overview of how an individual's life will be so that, key decisions can be made. Know your horoscope to get aware of the cosmic challenges that will be presented to you.</p>
+                            </div>
+                            <div class="hs_kd_second_list_sec_wrapper">
+                                <ul>
+                                    <li><i class="fa fa-circle"></i> &nbsp;&nbsp;When will I get married?</li>
+                                    <li><i class="fa fa-circle"></i> &nbsp;&nbsp;Why there is a delay in getting married?</li>
+                                    <li><i class="fa fa-circle"></i> &nbsp;&nbsp;Do I have any dosha (affliction) which is delaying or denying marriage?</li>
+                                    <li><i class="fa fa-circle"></i> &nbsp;&nbsp;Will I get an understanding partner</li>
+                                    <li><i class="fa fa-circle"></i> &nbsp;&nbsp;What are my chances for a second marriage?</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="hs_kd_second_img_sec_wrapper">
+                                <img src="{{ url_for('static',filename='images/content/kundali/kundli_img.jpg') }}" class="img-responsive" alt="kundali_img" />
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="hs_kd_right_sidebar_main_wrapper">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="hs_kd_right_first_sec_wrapper">
+                                <div class="hs_kd_right_first_sec_heading">
+                                    <h2>kundali patrikla</h2>
+                                </div>
+                                <div class="hs_kd_right_first_sec_img_heading">
+                                    <img src="{{ url_for('static',filename='images/content/kundali/patrika.jpg') }}" alt="patrika" />
+                                </div>
+                                <div class="hs_kd_right_first_sec_img_price_heading">
+                                    <ul>
+                                        <li>Kundli Patrika</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="hs_kd_right_first_sec_wrapper2">
+                                <div class="hs_kd_right_first_sec_heading">
+                                    <h2>Mangala Dosha</h2>
+                                </div>
+                                <div class="hs_kd_right_first_sec_img_heading">
+                                    <img src="{{ url_for('static',filename='images/content/kundali/patrika2.jpg') }}" alt="patrika" />
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- hs sidebar End -->
+{% endblock %}
